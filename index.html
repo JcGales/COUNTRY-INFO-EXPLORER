@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header-title">Country Explorer</h1>
+            <p class="header-subtitle">Discover world countries</p>
+        </header>
+        
+        <main>
+          <section class="search-section">
+            <div class="search-container">
+              <button id="search-button">
+                <i class="fas fa-search search-icon"></i>
+              </button>
+              <input type="text" class="search-input" id="searchInput" placeholder="Search countries..." autocomplete="off">
+            </div>
+          </section>
+              <div class="filter-container">
+                    <div class="filter-chip active" data-region="all">All</div>
+                    <div class="filter-chip" data-region="africa">Africa</div>
+                    <div class="filter-chip" data-region="americas">Americas</div>
+                    <div class="filter-chip" data-region="asia">Asia</div>
+                    <div class="filter-chip" data-region="europe">Europe</div>
+                    <div class="filter-chip" data-region="oceania">Oceania</div>
+                </div>
+              
+          </section>
+            
+            <section class="results-container">
+                <div class="section-header">
+                    <h2 class="section-title">Countries</h2>
+                    <a href="#" class="section-link">See All</a>
+                </div>
+  
+                <div class="country-card">
+                    <div class="country-header">
+                        <img src="https://flagcdn.com/us.svg" alt="United States Flag" class="flag" id="flag">
+                        <div class="country-name-container">
+                            <h3 class="country-name" id="country-name">United States</h3>
+                            <p class="country-region">Americas • Northern America</p>
+                        </div>
+                        <i class="fas fa-chevron-right" style="color: var(--system-gray3);"></i>
+                    </div>
+                    
+                    <div class="country-info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Capital</span>
+                            <span class="info-value" id="capital">Washington, D.C.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Population</span>
+                            <span class="info-value" id="population">329.5M</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Native Language</span>
+                            <span class="info-value" id="language">English</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Currency</span>
+                            <span class="info-value" id="currency">USD ($)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
